@@ -8,7 +8,46 @@
     <link rel="stylesheet" href="/screen.css" />
   </head>
   <body>
-    <h1 class="hello-world"></h1>
+    <header>
+      <h1 class="hello-world">Scoreboard</h1>
+    </header>
+
+    <main>
+      <section class="team-one">
+        <h2>Team 1</h2>
+        <h2 class="hide">Winner!</h2>
+        <h3>0</h3>
+        <fieldset>
+          <input type="text" placeholder=" Team Name" />
+          <button>Update</button>
+        </fieldset>
+
+        <fieldset>
+          <button>+</button>
+          <button class="teamOne-sub-button">-</button>
+        </fieldset>
+      </section>
+
+      <section class="reset">
+        <button>Reset Game</button>
+      </section>
+
+      <section class="team-two">
+        <h2>Team 2</h2>
+        <h2 class="hide">Winner!</h2>
+        <h3>0</h3>
+        <fieldset>
+          <input type="text" placeholder=" Team Name" />
+          <button class="team-two-update">Update</button>
+        </fieldset>
+
+        <fieldset>
+          <button class="teamTwo-add-button">+</button>
+          <button class="teamTwo-sub-button">-</button>
+        </fieldset>
+      </section>
+    </main>
+
     <script src="/main.js" charset="utf-8"></script>
   </body>
 </html>
