@@ -22,12 +22,13 @@ function main() {
     teamTwoPoints = 0
     document.querySelector('.team-one h3').innerHTML = 0
     document.querySelector('.team-two h3').innerHTML = 0
-    document.querySelector('.hide').style.display = 'none'
+    document.querySelector('.team-one .hide').style.display = 'none'
+    document.querySelector('.team-two .hide').style.display = 'none'
     document
       .querySelectorAll('.team-one button, .team-two button')
       .forEach(button => (button.disabled = false))
-    document.querySelector('section h2').innerHTML = 'Team 1'
-    document.querySelector('section + section h2').innerHTML = 'Team 2'
+    document.querySelector('section h2').innerHTML = 'House 1'
+    document.querySelector('section + section h2').innerHTML = 'House 2'
   }
 
   const resetButton = document.querySelector('.reset button')

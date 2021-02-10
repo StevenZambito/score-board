@@ -6,34 +6,95 @@ html {
   height: 100%;
 }
 
+@font-face {
+  font-family: 'harry_potterregular';
+  src: url('./assets/harrp___-webfont.woff2') format('woff2'),
+    url('./assets/harrp___-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
   margin: 0;
   min-height: 100%;
+  font-family: 'harry_potterregular';
+  letter-spacing: 1px;
+  background-image: url('/assets/hpbackground.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
 }
 
-h1 {
+header {
   text-align: center;
+  font-size: 1.9rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 3rem;
 }
 
 .hide {
   display: none;
+  color: gold;
 }
 
 main {
   display: flex;
   justify-content: space-around;
-  border: solid pink;
 }
 
 section {
-  border: solid red;
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 2rem;
 }
 
 .reset {
-  border: solid black;
   display: grid;
   align-items: center;
+  padding: 0;
+}
+
+button {
+  font-size: 13px;
+  padding: 3px 10px;
+  border-radius: 4px;
+}
+
+button:hover {
+  box-shadow: 0 0 5px 5px gold;
+  transform: scale(1.05) perspective(1px);
+  cursor: pointer;
+}
+
+.team-one {
+  background-color: #00613e;
+  opacity: 0.9;
+  box-shadow: 0 0 5px 5px gold;
+}
+
+.team-two {
+  background-color: #860909;
+  opacity: 0.9;
+  box-shadow: 0 0 5px 5px gold;
+}
+
+input[type='text'] {
+  width: 160px;
+  padding: 5px 5px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid gold;
+  border-radius: 4px;
+}
+
+fieldset {
+  border: none;
 }
