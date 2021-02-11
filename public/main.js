@@ -2,6 +2,8 @@ function main() {
   let teamOnePoints = 0
   let teamTwoPoints = 0
 
+  // Declare Winner
+
   const declareWinner = () => {
     if (teamOnePoints === 21) {
       document.querySelector('.hide').style.display = 'contents'
@@ -17,7 +19,9 @@ function main() {
     }
   }
 
-  const resetGame = () => {
+  // Reset Score
+
+  const reset = () => {
     teamOnePoints = 0
     teamTwoPoints = 0
     document.querySelector('.team-one h3').innerHTML = 0
@@ -32,7 +36,7 @@ function main() {
   }
 
   const resetButton = document.querySelector('.reset button')
-  resetButton.addEventListener('click', resetGame)
+  resetButton.addEventListener('click', reset)
 
   // Team One Add/Sub Points
 
